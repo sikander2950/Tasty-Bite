@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Bite</title>
+    <link rel="stylesheet" href="a1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Main Header -->
+    <header class="modern-header">
+      <div class="header-left">
+        <h1 class="brand-logo">☕ Tasty Bite</h1>
+      </div>
+      <nav class="header-nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-right">
+        <a href="#login" class="header-icon" title="Login">
+          <i class="fas fa-user"></i>
+        </a>
+        <a href="#cart" class="header-icon" title="Cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </a>
+        <div class="menu-dropdown">
+          <button class="menu-toggle" title="Menu">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#profile"><i class="fas fa-user-circle"></i> My Profile</a>
+            <a href="#orders"><i class="fas fa-receipt"></i> Order History</a>
+            <a href="#rewards"><i class="fas fa-gift"></i> Rewards Program</a>
+            <a href="#reservations"><i class="fas fa-calendar-alt"></i> Reservations</a>
+            <hr />
+            <a href="#settings"><i class="fas fa-cog"></i> Settings</a>
+            <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="#support"><i class="fas fa-headset"></i> Support</a>
+            <a href="#about-us"><i class="fas fa-info-circle"></i> About Us</a>
+            <hr />
+            <a href="#admin"><i class="fas fa-shield-alt"></i> Admin Panel</a>
+            <a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home page and content sections -->
+    <section id="home-page" class="page active">
+      <main id="content">
+        <section id="home" class="banner-slider">
+          <div class="slide slide-1">
+            <div class="hero-copy">
+              <span>Fast service · fresh taste · warm welcome</span>
+              <h2>Welcome to Tasty Bite</h2>
+              <p>Discover a modern cafe experience with crafted coffee, meals, and daily specials.</p>
+              <div class="hero-actions">
+                <a href="#menu" class="primary-btn">View Menu</a>
+                <a href="#login" class="secondary-btn">Sign In</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-2">
+            <div class="hero-copy">
+              <span>Brewed fresh every morning</span>
+              <h2>Fresh coffee every day</h2>
+              <p>Choose from lattes, cappuccinos, cold brews, and seasonal specialty drinks.</p>
+            </div>
+          </div>
+          <div class="slide slide-3">
+            <div class="hero-copy">
+              <span>Smart ordering, fast pickup</span>
+              <h2>Meals made for your day</h2>
+              <p>Breakfast sandwiches, hearty salads, pastries, and more – ready when you are.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="about-section">
+          <div class="section-header">
+            <h2>About Tasty Bite</h2>
+            <p>Local cafe with premium ingredients, friendly service, and a welcoming atmosphere.</p>
+          </div>
+          <div id="about-parent" class="about-grid">
+            <div class="about-child">
+              <article>
+                <p>
+                  Tasty Bite is your neighborhood destination for handcrafted coffee, bakery favorites,
+                  and fresh meals prepared every day. Our team is focused on quality, sustainability,
+                  and creating a space where guests feel comfortable and valued.
+                </p>
+                <ul>
+                  <li>Curated seasonal menu</li>
+                  <li>Fast online ordering</li>
+                  <li>Daily rewards and membership perks</li>
+                </ul>
+              </article>
+            </div>
+            <div class="about-child about-image">
+              <img src="Coffee Cup.png" alt="Cafe interior" />
+            </div>
+          </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+          <div class="section-header">
+            <h2>Our Menu</h2>
+            <p>Browse our favorite options and add items to your cart for quick ordering.</p>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card" data-menu-id="breakfast">
+              <img src="breakfast.jpg" alt="Breakfast platter" />
+              <div class="menu-card-body">
+                <h3>Breakfast</h3>
+                <p>Classic favorites and healthy morning picks to start the day right.</p>
+                <div class="menu-meta">
+                  <span>₹220</span>
+                  <button class="primary-btn add-to-cart-btn">Add to cart</button>
+                </div>
+              </div>
+            </article>
+            <article class="menu-card" data-menu-id="lunch">
+              <img src="lunch.jpg" alt="Lunch items" />
+              <div class="menu-card-body">
+                <h3>Lunch</h3>
+                <p>Hearty sandwiches, fresh salads, and tasty midday meals served with style.</p>
+                <div class="menu-meta">
+                  <span>₹340</span>
+                  <button class="primary-btn add-to-cart-btn">Add to cart</button>
+                </div>
+              </div>
+            </article>
+            <article class="menu-card" data-menu-id="beverages">
+              <img src="Bavarages.jpg" alt="Beverages selection" />
+              <div class="menu-card-body">
+                <h3>Beverages</h3>
+                <p>Refreshing drinks, specialty coffees, and fresh juices to keep you energized.</p>
+                <div class="menu-meta">
+                  <span>₹180</span>
+                  <button class="primary-btn add-to-cart-btn">Add to cart</button>
+                </div>
+              </div>
+            </article>
+            <article class="menu-card" data-menu-id="snacks">
+              <img src="Snacks.jpg" alt="Snack options" />
+              <div class="menu-card-body">
+                <h3>Snacks</h3>
+                <p>Perfect bites to share or enjoy while relaxing with friends.</p>
+                <div class="menu-meta">
+                  <span>₹260</span>
+                  <button class="primary-btn add-to-cart-btn">Add to cart</button>
+                </div>
+              </div>
+            </article>
+            <article class="menu-card" data-menu-id="pastries">
+              <img src="Pastries and Deserts.jpg" alt="Pastries and desserts" />
+              <div class="menu-card-body">
+                <h3>Pastries & Desserts</h3>
+                <p>Freshly baked treats and sweet delights made daily to satisfy every craving.</p>
+                <div class="menu-meta">
+                  <span>₹240</span>
+                  <button class="primary-btn add-to-cart-btn">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="reviews-section">
+          <div class="section-header">
+            <h2>Customer Reviews</h2>
+            <p>Real feedback from guests who enjoy our food, coffee, and service.</p>
+          </div>
+          <div id="reviews-list" class="reviews-grid"></div>
+          <form id="review-form" class="review-form">
+            <label for="review-text">Share your experience</label>
+            <textarea id="review-text" rows="4" placeholder="Write your review here..."></textarea>
+            <button type="submit" class="primary-btn">Submit Review</button>
+          </form>
+        </section>
+
+        <section id="contact" class="contact-section">
+          <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>Reach out for orders, catering, events, or any support requests.</p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>Phone</h3>
+              <p>7696267064</p>
+            </div>
+            <div class="contact-card">
+              <h3>Email</h3>
+              <p><a href="mailto:Sikander2950@gmail.com">Sikander2950@gmail.com</a></p>
+            </div>
+            <div class="contact-card">
+              <h3>Address</h3>
+              <p>UE II-Partappura Road, Shahpur, Jalandher-144020</p>
+            </div>
+            <div class="contact-card">
+              <h3>Social</h3>
+              <div class="contact-icons">
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="maps"><i class="fas fa-map-marker-alt"></i></a>
+                <a href="#" class="phone"><i class="fas fa-phone"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <!-- Hidden application pages -->
+    <section id="login-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>Sign In</h1>
+      </header>
+      <main class="panel">
+        <form id="login-form" class="login-panel">
+          <h2>Customer Login</h2>
+          <label for="login-email">Email</label>
+          <input id="login-email" type="email" placeholder="admin@tastybite.com" required />
+          <label for="login-password">Password</label>
+          <input id="login-password" type="password" placeholder="Enter your password" required />
+          <button class="primary-btn" type="submit">Continue</button>
+          <p class="tiny-text">Use <strong>admin@tastybite.com</strong> / <strong>admin123</strong> for admin access.</p>
+        </form>
+      </main>
+    </section>
+
+    <section id="cart-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>Your Cart</h1>
+      </header>
+      <main class="panel cart-panel">
+        <div id="cart-items" class="cart-items"></div>
+        <aside class="checkout-panel">
+          <div id="checkout-details" class="checkout-details"></div>
+          <button id="place-order-btn" class="primary-btn">Place order</button>
+        </aside>
+      </main>
+    </section>
+
+    <section id="profile-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>My Profile</h1>
+      </header>
+      <main class="panel" id="profile-content"></main>
+    </section>
+
+    <section id="history-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>Order History</h1>
+      </header>
+      <main class="panel" id="history-content"></main>
+    </section>
+
+    <section id="rewards-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>Rewards</h1>
+      </header>
+      <main class="panel" id="rewards-content"></main>
+    </section>
+
+    <section id="reservations-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>Reservations</h1>
+      </header>
+      <main class="panel" id="reservations-content"></main>
+    </section>
+
+    <section id="settings-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>Settings</h1>
+      </header>
+      <main class="panel settings-panel">
+        <div class="settings-group">
+          <h2>Appearance</h2>
+          <label class="switch-row">
+            <span>Dark mode</span>
+            <input id="theme-toggle" type="checkbox" />
+          </label>
+          <div class="font-controls">
+            <button id="font-increase" class="secondary-btn">A+</button>
+            <button id="font-reset" class="secondary-btn">Reset</button>
+          </div>
+        </div>
+        <div class="settings-group">
+          <h2>Notifications</h2>
+          <label class="switch-row">
+            <span>Receive alerts</span>
+            <input id="notifications-toggle" type="checkbox" checked />
+          </label>
+        </div>
+      </main>
+    </section>
+
+    <section id="faq-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>FAQ</h1>
+      </header>
+      <main class="panel faq-panel">
+        <div class="faq-item">
+          <h3>How do I place an order?</h3>
+          <p>Add menu items to the cart and complete the checkout on the cart page.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use rewards points?</h3>
+          <p>Yes — rewards are automatically reflected on eligible orders after sign in.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you support takeout and delivery?</h3>
+          <p>Takeout is available immediately. Delivery depends on your location and is offered in-app.</p>
+        </div>
+      </main>
+    </section>
+
+    <section id="support-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>Support</h1>
+      </header>
+      <main class="panel support-panel">
+        <p>Need help? Email <a href="mailto:support@tastybite.com">support@tastybite.com</a> or call 7696267064.</p>
+        <p>Our team is available during business hours to assist with orders and reservations.</p>
+      </main>
+    </section>
+
+    <section id="about-us-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>About Us</h1>
+      </header>
+      <main class="panel about-panel">
+        <p>Tasty Bite is a modern cafe built for busy mornings, relaxed lunches, and memorable moments with friends.</p>
+        <p>Our focus is on premium ingredients, consistent quality, and creating a place where every guest feels welcome.</p>
+      </main>
+    </section>
+
+    <section id="admin-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>Admin Panel</h1>
+      </header>
+      <main class="panel admin-panel">
+        <div class="admin-summary">
+          <div>
+            <h3 id="admin-users-count">0</h3>
+            <p>Registered users</p>
+          </div>
+          <div>
+            <h3 id="admin-orders-count">0</h3>
+            <p>Total orders</p>
+          </div>
+          <div>
+            <h3 id="admin-reviews-count">0</h3>
+            <p>Reviews submitted</p>
+          </div>
+        </div>
+        <div id="admin-sections"></div>
+      </main>
+    </section>
+
+    <section id="logout-page" class="page hidden">
+      <header class="page-header">
+        <button class="back-btn">← Home</button>
+        <h1>Logout</h1>
+      </header>
+      <main class="panel">
+        <p>You are logged out. Sign in again to continue your order and manage preferences.</p>
+      </main>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
